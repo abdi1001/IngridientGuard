@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IngredientGuard</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f7f2;
+      --panel: #ffffff;
+      --text: #17201b;
+      --muted: #5e6b63;
+      --accent: #1f7a4d;
+      --accent-dark: #155236;
+      --border: #d9e2da;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top left, #dff3d8 0, transparent 30%),
+        linear-gradient(180deg, var(--bg), #edf2ec);
+      color: var(--text);
+    }
+
+    .wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 64px 20px;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 32px;
+      box-shadow: 0 20px 60px rgba(26, 48, 34, 0.08);
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      line-height: 1;
+    }
+
+    p {
+      margin: 0 0 16px;
+      color: var(--muted);
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    a.button {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 999px;
+      text-decoration: none;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 600;
+    }
+
+    a.button.secondary {
+      background: #eef5ef;
+      color: var(--accent-dark);
+      border: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <h1>IngredientGuard</h1>
+      <p>Scan packaged foods, review ingredients, and check allergen and nutrition details faster.</p>
+      <p>Use the links below for app support and policy information.</p>
+      <div class="links">
+        <a class="button" href="./support/">Support</a>
+        <a class="button secondary" href="https://abdifatahahmed.com/privacy">Privacy Policy</a>
+        <a class="button secondary" href="https://abdifatahahmed.com/terms">Terms of Use</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
